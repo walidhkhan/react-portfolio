@@ -37,7 +37,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   background: var(--dark);
-  color: var(--dark);
+  color: var(--light);
   font-family: 'Roboto slab', sans-serif;
 }
 
@@ -94,6 +94,7 @@ a:hover {
 
 /* header {
   background: var(--secondary);
+  font-weight: bold;
 } */
 
 header a {
@@ -298,6 +299,6 @@ a {
 #header-background {
   width: 100%;
   height: 50%;
-  background:url(./assets/cover/cover-image.jpg) no-repeat;
-  background-size: 100%; 
+  background:url(./assets/cover/cover-image3.jpg);
+  /* background-size: 100%;  */
 }

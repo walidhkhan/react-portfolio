@@ -5,9 +5,9 @@ import Nav from './components/Navigation'
 
 function App() {
   return (
-    <div>
-        <Header></Header>
-        <Nav></Nav>
+    <div className="flex-row" id="header-background">
+        <Header />
+        <Nav />
     </div>
   );
 }

@@ -1,20 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Nav from './components/Navigation'
-import Project from './components/Project';
+import Page from './components/Page';
 // import './App.css';
 
 function App() {
-  
+  const [pages] = useState([
+    {
+      name: 'About Me',
+      description:
+        "Short description about myself",
+    },
+    {
+      name: 'Portfolio',
+      description:
+        "Project List",
+    },
+    {
+      name: 'Contact',
+      description:
+        "Let's get in touch",
+    },
+    {
+      name: 'Resume',
+      description:
+        "Official resume",
+    },
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
     <div >
       <div className="flex-row" id="header-background">
         <Header></Header>
-        <Nav></Nav>
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        ></Nav>
       </div>
       <div>
-        <Project></Project>
+        <Page
+          currentPage={currentPage}
+        ></Page>
       </div>
     </div>
   );

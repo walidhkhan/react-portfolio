@@ -4,7 +4,7 @@ import photo from "../../assets/small/commercial/0.jpg";
 
 function Project(props) {
     const currentCategory = {
-        name: "projects",
+        name: "portfolio",
         description:
         "list of my projects including their respective images, titles, links, and github repositories"
     };

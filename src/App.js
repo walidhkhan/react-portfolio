@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Nav from './components/Navigation'
 import Page from './components/Page';
+import Contact from './components/Contact'
 // import './App.css';
 
 function App() {
@@ -45,6 +46,11 @@ function App() {
           currentPage={currentPage}
         ></Page>
       </div>
+      <main>
+        <ContactForm></ContactForm>
+        <Gallery currentCategory={currentCategory}></Gallery>
+        <About></About>
+      </main>
     </div>
   );
 }

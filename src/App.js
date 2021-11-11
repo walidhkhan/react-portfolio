@@ -48,8 +48,6 @@ function App() {
       </div>
       <main>
         <ContactForm></ContactForm>
-        <Gallery currentCategory={currentCategory}></Gallery>
-        <About></About>
       </main>
     </div>
   );

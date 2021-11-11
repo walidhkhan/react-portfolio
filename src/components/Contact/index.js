@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function ContactForm() {
-    const [formState, setFormState] = useState();
     const { name, email, message } = formState;
+    const [formState, setFormState] = useState();
 
     function handleChange(e) {
         setFormState({ ...formState, [e.target.name]: e.target.value })
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
     }
 
     console.log(formState);
@@ -13,7 +18,7 @@ function ContactForm() {
     return (
         <section>
             <h1>Contact me</h1>
-            <form id="contact-form">
+            <form id="contact-form" onSubmit={handleSubmit}>
             // name input
                 <div>
                     <label htmlFor="name">Name:</label>

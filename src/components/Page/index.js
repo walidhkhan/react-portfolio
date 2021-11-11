@@ -1,7 +1,7 @@
 import React from 'react';
 import About from '../About';
 import Portfolio from '../Portfolio';
-import Contact from '../ContactForm';
+import Contact from '../Contact';
 import PageContent from '../PageContent';
 
 function Page({currentPage}) {

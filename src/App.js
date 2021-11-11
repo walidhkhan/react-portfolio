@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Nav from './components/Navigation'
 import Page from './components/Page';
-import ContactForm from './components/ContactForm'
+import ContactForm from './components/Contact'
 // import './App.css';
 
 function App() {

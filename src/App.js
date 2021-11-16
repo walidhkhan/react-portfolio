@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Nav from './components/Navigation'
-import Page from './components/Page';
-import ContactForm from './components/Contact'
+import About from './components/About';
+// import Page from './components/Page';
+import ContactForm from './components/Contact';
+import Gallery from './components/Gallery';
+
 // import './App.css';
 
 function App() {
@@ -41,12 +44,14 @@ function App() {
           currentPage={currentPage}
         ></Nav>
       </div>
-      <div>
+      {/* <div>
         <Page
           currentPage={currentPage}
         ></Page>
-      </div>
+      </div> */}
       <main>
+        <Gallery></Gallery>
+        <About></About>
         <ContactForm></ContactForm>
       </main>
     </div>

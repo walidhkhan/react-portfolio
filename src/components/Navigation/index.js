@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 
 function Nav(props) {
+
     const {
         pages = [],
         setCurrentPage,
         currentPage,
     } = props;
-
-    // function categorySelected(name) {
-    //     console.log(`${name} clicked`)
-    // }
+    
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentPage.name);
+    }, [currentPage]);
 
     return (
         <nav>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
   return (
-    <header>
+    <header className="flex-row" id="header-background">
       <h1 >Walid Khan</h1>
     </header>
   );

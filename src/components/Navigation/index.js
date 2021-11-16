@@ -1,37 +1,31 @@
-import React, { useEffect} from 'react';
-import { capitalizeFirstLetter } from "../../utils/helpers";
+import React from 'react';
 
-
-function Nav(props) {
+function Navigation(props) {
 
     const {
-        pages = [],
+        // pages = [],
         setCurrentPage,
         currentPage,
     } = props;
-    
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(currentPage.name);
-    }, [currentPage]);
 
     return (
         <nav>
             <ul className="flex-row">
-                {pages.map((page) => (
-                    <li className={`mx-1 ${currentPage.name === page.name && 'navActive'
-                        }`} key={page.name}>
-                        <span
-                            onClick={() => {
-                                setCurrentPage(page)
-                            }}
-                        >
-                            {capitalizeFirstLetter(page.name)}
-                        </span>
-                    </li>
-                ))}
+                <li className={currentPage === "about" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("about")}>About Me</span>
+                </li>
+                <li className={currentPage === "portfolio" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("portfolio")}>Portfolio</span>
+                </li>
+                <li className={currentPage === "contact" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("contact")}>Contact</span>
+                </li>
+                <li className={currentPage === "resume" ? "mx-2 navActive" : "mx-2"}>
+                    <span onClick={() => setCurrentPage("resume")}>Resume</span>
+                </li>
             </ul>
         </nav>
     );
 }
 
-export default Nav;
+export default Navigation;

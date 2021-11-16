@@ -1,26 +1,40 @@
-import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
-import photo from "../../assets/small/commercial/0.jpg";
+import React, { useState } from 'react';
 
 function Project(props) {
-    const currentCategory = {
-        name: "portfolio",
-        description:
-        "list of my projects including their respective images, titles, links, and github repositories"
-    };
+    const currentProject = useState(props)[0].projects;
+
+    const name = currentProject.name;
+    const description = currentProject.description;
+    const image = currentProject.image;
+    const techs = currentProject.technologies;
+    const gitLink = currentProject.github;
+
+    // const currentProject = {
+    //     name: "portfolio",
+    //     description:
+    //     "list of my projects including their respective images, titles, links, and github repositories"
+    // };
+
     return (
-        <section>
-            <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-            <p>{currentCategory.name}</p>
-            <div>
-            {/* eslint-disable-next-line */}
-                <img    
-                    src={photo}
-                    alt="Project #1 Picture"
-                    className="img-thumbnail mx-1"
-                />
-            </div>
-        </section>
+        <Card>
+            <Card.Img 
+                src={require('../../assets/small/food')}
+                className={card-image}
+            />
+            <Card.Body>
+                <Card.Title className="card-title">{name}</Card.Title>
+                <Card.Text className="card-text">{description}</Card.Text>
+                <Card.Subtitle className="card-subtitle">Techs Used</Card.Subtitle>
+                <Card.Text className="card-techs">{getTechs(techs)}</Card.Text>
+                <Card.Link href={appLink} target="_blank" className="card-link">
+                    {name} App
+                </Card.Link>
+                <br></br>
+                <Card.Link href={gitLink} target="_blank" className="card-link">
+                    {name} Github
+                </Card.Link>
+            </Card.Body>
+        </Card>
     );
 }
 

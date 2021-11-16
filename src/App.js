@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import Navigation from './components/Navigation'
+import Footer from './components/Footer';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
+
 
 // import './App.css';
 
@@ -11,25 +14,32 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState("about");
 
+  const renderTab = () => {
+    switch (currentPage) {
+      case "about":
+        return <About />;
+      case "portfolio":
+        return <Portfolio />;
+      case "contact":
+        return <Contact />;
+      case "resume":
+        return <Resume />;
+      default:
+        return null;
+    }
+  }
+
   return (
-    <div >
-      <div className="flex-row" id="header-background">
-        <Header></Header>
-        <Navigation
-          // pages={pages}
-          setCurrentPage={setCurrentPage}
-          currentPage={currentPage}
-        ></Navigation>
+    <div>
+      <div>
+        <Header currentPage={currentPage} setCurrentPage={setCurrentPage}></Header>
       </div>
-      {/* <div>
-        <Page
-          currentPage={currentPage}
-        ></Page>
-      </div> */}
-      <main>
-        <About></About>
-        <Contact></Contact>
-      </main>
+      <div>
+        <main>{renderTab()}</main>
+      </div>
+      <div>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,21 @@
 import React from 'react';
+import Navigation from "../Navigation";
 
-function Header() {
+
+function Header(props) {
+  const { currentPage, setCurrentPage } = props;
+
   return (
-    <header className="flex-row" id="header-background">
-      <h1 >Walid Khan</h1>
+    <header>
+      <div>
+        <h2>Walid Khan's React Portfolio</h2>
+      </div>
+      <div>
+        <Navigation
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        ></Navigation>
+      </div>
     </header>
   );
 }

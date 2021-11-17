@@ -7,7 +7,7 @@ function Project(props) {
     const name = currentProject.name;
     const description = currentProject.description;
     const image = currentProject.image;
-    // const techs = currentProject.technologies;
+    const technologies = currentProject.technologies;
     const githubLink = currentProject.github;
 
     // const currentProject = {
@@ -15,6 +15,20 @@ function Project(props) {
     //     description:
     //     "list of my projects including their respective images, titles, links, and github repositories"
     // };
+
+    function getTechList(techArray) {
+        let technologiesList = "";
+
+        for (var i = 0; i < techArray.length; i++) {
+            if (i === techArray.length - 1) {
+                technologiesList += techArray[i];
+            } else {
+                technologiesList += techArray[i] + ", ";
+            }
+        }
+
+        return technologiesList;
+    }
 
     return (
         <Card>
@@ -27,7 +41,7 @@ function Project(props) {
                 <Card.Title className="card-title">{name}</Card.Title>
                 <Card.Text className="card-text">{description}</Card.Text>
                 <Card.Subtitle className="card-subtitle">Techs Used</Card.Subtitle>
-                {/* <Card.Text className="card-techs">{getTechs(techs)}</Card.Text> */}
+                <Card.Text className="card-techs">{getTechList(technologies)}</Card.Text>
                 {/* <Card.Link href={appLink} target="_blank" className="card-link">
                     {name} App
                 </Card.Link>

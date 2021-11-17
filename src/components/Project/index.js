@@ -49,7 +49,7 @@ function Project(props) {
                 </Card.Link>
                 <br></br> */}
                 <Card.Link href={githubLink} target="_blank" className="card-link">
-                    {name} Github
+                    View Repo
                 </Card.Link>
             </Card.Body>
         </Card>

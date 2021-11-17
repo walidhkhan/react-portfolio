@@ -5,8 +5,8 @@ function Portfolio() {
     const projects = [
         {
             name: 'Readme Generator',
-            description: 'This is a ',
-            image: '',
+            description: 'This is a README.md generator',
+            image: 'readme-pic.png',
             technologies: [
                 'JS',
                 'Inquirer package',
@@ -17,7 +17,7 @@ function Portfolio() {
         {
             name: 'Weather Dashboard',
             description: "Weather app which uses the openweather API to allow users to search a city's current weather conditions and a 5 day forecast",
-            image: '',
+            image: 'weatherdashboard-pic.png',
             technologies: [
                 'JS',
                 'CSS',
@@ -28,7 +28,7 @@ function Portfolio() {
         {
             name: 'AlltheFeelz',
             description: 'This is my first full-stack web project',
-            image: '',
+            image: 'allthefeelz-pic.jpg',
             technologies: [
                 'JS',
                 'bcrypt',

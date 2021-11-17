@@ -6,9 +6,9 @@ function Project(props) {
 
     const name = currentProject.name;
     const description = currentProject.description;
-    // const image = currentProject.image;
+    const image = currentProject.image;
     // const techs = currentProject.technologies;
-    // const gitLink = currentProject.github;
+    const githubLink = currentProject.github;
 
     // const currentProject = {
     //     name: "portfolio",
@@ -20,8 +20,8 @@ function Project(props) {
         <Card>
             <Card.Img 
                 variant="top"
-                src={require('../../assets/small/food/0.jpg')}
-                // className={card-image}
+                src={require(`../../assets/project-pics/${image}`)}
+                className="card-image"
             />
             <Card.Body>
                 <Card.Title className="card-title">{name}</Card.Title>
@@ -31,10 +31,10 @@ function Project(props) {
                 {/* <Card.Link href={appLink} target="_blank" className="card-link">
                     {name} App
                 </Card.Link>
-                <br></br>
-                <Card.Link href={gitLink} target="_blank" className="card-link">
+                <br></br> */}
+                <Card.Link href={githubLink} target="_blank" className="card-link">
                     {name} Github
-                </Card.Link> */}
+                </Card.Link>
             </Card.Body>
         </Card>
     );

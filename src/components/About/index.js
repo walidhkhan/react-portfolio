@@ -1,5 +1,5 @@
 import React from 'react';
-
+import avatar from '../../assets/profile-pic/Blank-Avatar.png';
 function About() {
 
     return (
@@ -9,7 +9,8 @@ function About() {
             </div>
             <div>
                 <img
-                    src={require('../../assets/profile-pic/Blank-Avatar.png')}
+                    // src={require('../../assets/profile-pic/Blank-Avatar.png')}
+                    src={avatar}
                     alt="about-me"
                     className="photo"
                 />

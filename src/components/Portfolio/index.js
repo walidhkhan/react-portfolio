@@ -4,31 +4,41 @@ import Project from '../Project';
 function Portfolio() {
     const projects = [
         {
-            name: 'Robot Gladiator',
-            description: 'This is my 1st JS app',
+            name: 'Readme Generator',
+            description: 'This is a ',
             image: '',
             technologies: [
-                'JS'
+                'JS',
+                'Inquirer package',
+                'Markdown'
             ],
-            github: '',
+            github: 'https://github.com/walidhkhan/professional-readme-generator',
         },
         {
-            name: 'Robot Gladiator',
-            description: 'This is my 1st JS app',
+            name: 'Weather Dashboard',
+            description: "Weather app which uses the openweather API to allow users to search a city's current weather conditions and a 5 day forecast",
             image: '',
             technologies: [
-                'JS'
+                'JS',
+                'CSS',
+                'Openweather API'
             ],
-            github: '',
+            github: 'https://github.com/walidhkhan/weather-dashboard',
         },
         {
-            name: 'Robot Gladiator',
-            description: 'This is my 1st JS app',
+            name: 'AlltheFeelz',
+            description: 'This is my first full-stack web project',
             image: '',
             technologies: [
-                'JS'
+                'JS',
+                'bcrypt',
+                'express',
+                'express-session-sequelize',
+                'my-sql2',
+                'sequelize',
+                'bootstrap'
             ],
-            github: '',
+            github: 'https://github.com/JasJohn3/AlltheFeelz',
         },
     ]
     return( 
@@ -37,7 +47,8 @@ function Portfolio() {
                 <h1> My Portfolio </h1>
             </div>
             <div>
-                <ul className="flex-row">
+                {/* <ul className="flex-row"> */}
+                <ul>
                     <li><Project projects={projects[0]}></Project></li>
                     <li><Project projects={projects[1]}></Project></li>
                     <li><Project projects={projects[2]}></Project></li>

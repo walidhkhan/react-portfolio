@@ -19,6 +19,7 @@ function Project(props) {
     return (
         <Card>
             <Card.Img 
+                variant="top"
                 src={require('../../assets/small/food/0.jpg')}
                 // className={card-image}
             />

@@ -6,11 +6,11 @@ function Resume() {
             <div className="center">
                 <h1 className="page-header">My Resume</h1>
             </div>
-            {/* <div className="bottom-spacing">
-                <a href={require("../../assets/files/Owais' Resume.pdf")} download>
-                    <h4>Download my Resume</h4>
+            <div>
+                <a href={require("../../assets/files/Walid-Khan-Official-2021-Resume.pdf")} download>
+                    <h4>View my Resume</h4>
                 </a>
-            </div> */}
+            </div>
             <div>
                 <h5>Front-End Proficiencies</h5>
                 <ol>
@@ -38,7 +38,6 @@ function Resume() {
                 <ol>
                     <li>Git</li>
                     <li>npm</li>
-                    <li>Jest</li>
                     <li>Webpack</li>
                 </ol>
                 <br></br>

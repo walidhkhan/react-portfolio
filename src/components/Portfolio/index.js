@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../Project';
+// import readMePhoto from '../../assets/project-pics/'
 
 function Portfolio() {
     const projects = [
@@ -47,8 +48,7 @@ function Portfolio() {
                 <h1> My Portfolio </h1>
             </div>
             <div>
-                {/* <ul className="flex-row"> */}
-                <ul>
+                <ul className="flex-row">
                     <li><Project projects={projects[0]}></Project></li>
                     <li><Project projects={projects[1]}></Project></li>
                     <li><Project projects={projects[2]}></Project></li>

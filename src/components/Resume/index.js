@@ -12,7 +12,8 @@ function Resume() {
                 </a>
             </div>
             <div>
-                <h5>Front-End Proficiencies</h5>
+                <h6> Proficiencies </h6>
+                <h5>Front-End</h5>
                 <ol>
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -24,7 +25,7 @@ function Resume() {
                     <li>responsive design</li>
                 </ol>
                 <br></br>
-                <h5>Back-End Proficiencies</h5>
+                <h5>Back-End</h5>
                 <ol>
                     <li>APIs</li>
                     <li>NodeJS</li>
@@ -34,14 +35,14 @@ function Resume() {
                     <li>Progressive Web Applications (PWA)</li>
                 </ol>
                 <br></br>
-                <h5>Dev Tool Proficiencies</h5>
+                <h5>Dev Tool</h5>
                 <ol>
                     <li>Git</li>
                     <li>npm</li>
                     <li>Webpack</li>
                 </ol>
                 <br></br>
-                <h5>Database Proficiencies</h5>
+                <h5>Database</h5>
                 <ol>
                     <li>MySQL</li>
                     <li>Sequelize</li>

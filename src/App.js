@@ -14,7 +14,7 @@ function App() {
 
   const [currentPage, setCurrentPage] = useState("about");
 
-  const renderTab = () => {
+  const renderPage = () => {
     switch (currentPage) {
       case "about":
         return <About />;
@@ -35,7 +35,7 @@ function App() {
         <Header currentPage={currentPage} setCurrentPage={setCurrentPage}></Header>
       </div>
       <div>
-        <main>{renderTab()}</main>
+        <main>{renderPage()}</main>
       </div>
       <div>
         <Footer></Footer>

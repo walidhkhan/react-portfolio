@@ -6,9 +6,9 @@ function Header(props) {
   const { currentPage, setCurrentPage } = props;
 
   return (
-    <header>
+    <header id="header-background">
       <div>
-        <h2>Walid Khan's React Portfolio</h2>
+        <h2>Walid Khan</h2>
       </div>
       <div>
         <Navigation
